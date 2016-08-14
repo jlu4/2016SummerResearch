@@ -26,7 +26,7 @@ import org.apache.tomcat.util.http.fileupload.servlet.ServletRequestContext;
 @WebServlet("/PostHouseCL")
 public class PostHouseCL extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private String uploadPath = "/Users/Eric/Documents/Summerproject/webproject02/WebContent/static/Uploads/houseinfoimg"; //D:\BitBucket\Test\WebContent\WEB-INF\static\\upload
+	private String uploadPath = "/home/junye/workspace11/webproject/webproject02/WebContent/static/Uploads/houseinfoimg"; //D:\BitBucket\Test\WebContent\WEB-INF\static\\upload
     private String tempPath = "/Users/Eric/temPath"; // temp file repository
     File tempPathFile;   
     private String email;
@@ -62,7 +62,7 @@ public class PostHouseCL extends HttpServlet {
 	           Iterator<FileItem> i = items.iterator();
                ArrayList<String> uimg = new ArrayList<String>();  
                String uimgpath = "";
-               uploadPath = "/Users/Eric/Documents/Summerproject/webproject02/WebContent/static/Uploads/houseinfoimg";
+               uploadPath = "/home/junye/workspace11/webproject/webproject02/WebContent/static/Uploads/houseinfoimg";
 	           while (i.hasNext()) {
 	              FileItem fi = (FileItem) i.next();
 	              if(fi.isFormField()){
@@ -136,24 +136,26 @@ public class PostHouseCL extends HttpServlet {
 			System.out.println(price);
 			String houseinfo = map.get("houseinfo");
 			System.out.println(houseinfo);
+			String coordinate = map.get("coordinate");
+			System.out.println(coordinate);
 			HouseBeanCL hbc= new HouseBeanCL();
 			
 			if(email != null && h_location != null && h_area != null){
-				boolean check = hbc.posthouse(email, title, h_location, h_area, housetype, roomtype, sex, wechatid, qq, phonenumber, price, houseinfo, uimgpath);
+				boolean check = hbc.posthouse(email, title, h_location, h_area, housetype, roomtype, sex, wechatid, qq, phonenumber, price, houseinfo, uimgpath,coordinate);
 				if(check == false){
 					//houseinfo already exist
 					String error1 ="House information already exist!" ;
 					out.println(error1);
 					out.println("<br/>");
 					//Thread.sleep(5000);
-					response.sendRedirect("PostHouse.jsp?email="+email+"&error="+error1);
+					response.sendRedirect("postResponse.jsp?email="+email+"&error="+error1);
 				}
 				else{
 					//post successed
 					String success1 = "House information post successful!";
 					out.println(success1);
 					out.println("<br/>");
-					//response.sendRedirect("userHome.jsp?email="+email+"&success="+success1);
+					response.sendRedirect("postResponse.jsp?email="+email+"&success="+success1);
 				}
 			}
 		}

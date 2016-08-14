@@ -69,6 +69,7 @@ public class UserBeanCL {
 			ps.setString(1, email);
 			rs = ps.executeQuery();
 			if(rs.next()){
+				System.out.println("Hi here");
 				//username already exist!
 				//request.setAttribute("error","Email-address already exist");
 			}
@@ -138,7 +139,7 @@ public class UserBeanCL {
 			//get connection
 			ConnDB cd=new ConnDB();
 			ct=cd.getConn();
-			ps=ct.prepareStatement("select * from webuser where id=?");
+			ps=ct.prepareStatement("select * from webuser where id=? and state = '1'");
 			ps.setString(1, u);
 			rs=ps.executeQuery();
 			if(rs.next()){

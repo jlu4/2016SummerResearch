@@ -13,20 +13,20 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/commons-beanutils-1.7.0.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/commons-collections-3.2.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/commons-lang-2.4.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/commons-logging-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/ezmorph-1.0.4.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/java-json.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/javax.mail.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/json-lib-2.3-jdk15.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/jstl.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/postgresql-9.4-1204.jdbc4.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/postgresql-9.4-1204.jdbc41.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/postgresql-9.4-1204.jdbc42.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/postgresql-9.4-1205-jdbc42.jar"/>
-	<classpathentry kind="lib" path="/Users/Eric/webproject/WebContent/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/ezmorph-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/java-json.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/json-lib-2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/postgresql-9.4-1204.jdbc4.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/postgresql-9.4-1204.jdbc41.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/postgresql-9.4-1204.jdbc42.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/postgresql-9.4-1205-jdbc42.jar"/>
+	<classpathentry kind="lib" path="/home/junye/workspace9/webproject/webproject02/WebContent/WEB-INF/lib/standard.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

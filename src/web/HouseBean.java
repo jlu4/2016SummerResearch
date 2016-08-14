@@ -19,8 +19,14 @@ public class HouseBean {
 	private String h_area;
 	private String uimgpath;
 	private int state;
+	private String coordinate;
 	//private ArrayList<String> uimgs = new ArrayList<String>();
-	
+	public void setcoordinate(String sc){
+		this.coordinate = sc;
+	}
+	public String getcoordinate(){
+		return this.coordinate;
+	}
 	public void setuimgpath(String ip){
 		this.uimgpath = ip;
 	/*	File imgs = new File(this.uimgpath);

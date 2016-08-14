@@ -26,14 +26,14 @@ public RegisterServlet() {
 }
 public void doGet(HttpServletRequest request, HttpServletResponse response)  
            throws ServletException, IOException {  
-    System.out.print("yeah");
         String toMail = request.getParameter("email");  
         String registerName = request.getParameter("userName");  
     
-       String userName = "lujunye09221990@163.com";  
-        String password = "zxcvbmn1";  
+        String userName = "researchstevens@163.com";  
+        String password = "qwe123";  
          
-       String registerId = "" + Math.random() * Math.random();  
+        /*String registerId = "" + Math.random() * Math.random();*/  
+        String registerId = toMail;
         String url = "http://localhost:8080/MailBackServlet?registerId=" + registerId;  
          
         HttpSession httpSession = request.getSession();  
@@ -55,7 +55,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
             
             MimeMessage msg = new MimeMessage(session);  
             msg.setFrom(from);  
-            msg.setSubject("Stevens Housing Register");  
+            msg.setSubject("Welcome to Stevens Duckmate!");  
             msg.setSentDate(new Date());  
             msg.setContent("<a href='" + url + "'>Please click me to finish activating and login! </a>", "text/html;charset=utf-8");  
             msg.setRecipient(RecipientType.TO, to);  

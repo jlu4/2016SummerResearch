@@ -45,8 +45,12 @@ public class FindAllHouseCL extends HttpServlet {
 			String housetype = request.getParameter("housetype");
 			String roomtype = request.getParameter("roomtype");
 			String sex = request.getParameter("sex");
+			String minprice = request.getParameter("minprice");
+			String maxprice = request.getParameter("maxprice");
+			System.out.println("findallhousecl"+minprice);
+			System.out.println("findallhousecl"+maxprice);
 			HouseBeanCL hbc= new HouseBeanCL();
-			List<HouseBean> houseList = hbc.findAllHouse(h_area, housetype, roomtype, sex);
+			List<HouseBean> houseList = hbc.findAllHouse(h_area, housetype, roomtype, sex, minprice, maxprice);
 			request.setAttribute("houseList", houseList); 
 			HttpSession session = request.getSession();
 			session.setAttribute("houseList", houseList);

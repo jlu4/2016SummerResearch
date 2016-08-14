@@ -36,7 +36,7 @@ public class RegisterCL extends HttpServlet {
 			UserBeanCL ubc = new UserBeanCL();
 			String UserName = request.getParameter("username");
 			String Email = request.getParameter("email");
-			;
+			System.out.print(Email);
 			//Email.toLowerCase();
 			String PassWord = request.getParameter("password");
 			if(!(UserName == null && Email == null && PassWord == null)){

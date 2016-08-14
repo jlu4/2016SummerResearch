@@ -4,9 +4,9 @@
 <%@ page import="java.sql.*"%>  
 <%!  
     public static final String DBDRIVER = "org.postgresql.Driver" ;  
-    public static final String DBURL = "jdbc:postgresql://127.0.0.1:3307/postgres" ;  
-    public static final String DBUSER = "postgres" ;  
-    public static final String DBPASS = "890312" ;  
+    public static final String DBURL = "jdbc:postgresql://127.0.0.1:5432/MyWeb" ;  
+    public static final String DBUSER = "postgres1" ;  
+    public static final String DBPASS = "123qwe" ;  
 %> 
 <%  
     Connection conn = null ;  
