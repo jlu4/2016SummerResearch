@@ -31,7 +31,7 @@ public class HouseBean {
 		this.uimgpath = ip;
 	/*	File imgs = new File(this.uimgpath);
         File[] tempList = imgs.listFiles();
-        for (File f : tempList) {
+        for (File f : tempList) 
         	uimgs.add(f.getPath()); */
         
 	}
